@@ -15,5 +15,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Eureka Naming Server Container Image
-        working-directory: .
+        working-directory: ./
         run: mvn spring-boot:build-image -DskipTests
